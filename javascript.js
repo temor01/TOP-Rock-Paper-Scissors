@@ -34,22 +34,42 @@ function getHumanChoice() {
 var humanScore = 0;
 var computerScore = 0;
 
+
+// We'll make a new function that determines who wins
+function winner(humanChoice, computerChoice) {
+    if (humanChoice == 'Rock' & computerChoice == 'Scissors') {
+        console.log('Rock wins!');
+        humanScore = +1;
+    } else if (humanChoice == 'Paper' & computerChoice == 'Rock') {
+        console.log('Paper wins!');
+        humanScore = +1;
+    } else if (humanChoice == 'Scissors' & computerChoice == 'Paper') {
+        console.log('Scissors win!');
+        humanScore = +1;
+    } else {
+        return ('Nobody wins!');
+    }
+}
+
+
 // We'll go ahead and create a function that will let us play the game.
 function playRound(humanChoice, computerChoice) {
     if (humanChoice == computerChoice) {
         console.log("Tie");
-    } else {
-        console.log("Nobody wins!");
-    }
+    } else if (winner(humanChoice, computerChoice) != 'Nobody wins!') {
+        console.log("Human wins!");
+    } else winner(computerChoice, humanChoice);
 }
+
 
 // linking our latest variable to user input and computer choice
 humanChoice = getHumanChoice();
 computerChoice = getComputerChoice();
 
 // testing to make sure we get the correct result
-console.log(humanChoice);
-console.log(computerChoice);
+console.log("Human Choice: " + humanChoice);
+console.log("Computer Choice: " + computerChoice);
 
 // calling the function to see the final result
 playRound(humanChoice, computerChoice);
+
