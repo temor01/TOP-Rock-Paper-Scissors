@@ -27,3 +27,7 @@ function getHumanChoice() {
         console.log('Scissors');
     } else console.log('Wrong Choice!');
 }
+
+// We will create two new global variables to store human and computer score, both initially set at 0
+var humanScore = 0;
+var computerScore = 0;
