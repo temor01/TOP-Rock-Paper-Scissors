@@ -1,7 +1,8 @@
 // Rock Paper Scissors for TOP project.
 
+// Testing to see if our files are properly linked.
 console.log("Hello World");
 
-hint = ["Rock", "Paper", "Scissors"];
+// Storing game choices in an array
+var answers = ["Rock", "Paper", "Scissors"];
 
-console.log(hint[Math.floor(Math.random() * hint.length)]);
