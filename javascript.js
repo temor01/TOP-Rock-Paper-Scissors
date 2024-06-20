@@ -20,12 +20,12 @@ function getHumanChoice() {
     let choice = prompt("Please enter 1 for 'Rock';\nPlease enter 2 for 'Paper';\nPlease enter 3 for 'Scissors': ");
     
     if (choice == 1) {
-        return 'Rock';
+        console.log('Rock');
     } else if (choice == 2) {
-        return 'Paper';
+        console.log('Paper');
     } else if (choice == 3) {
-        return 'Scissors';
-    } else return 'Wrong Choice';
+        console.log('Scissors');
+    } else console.log('Wrong Choice!');
 }
 
-console.log(getHumanChoice());
+getHumanChoice();
