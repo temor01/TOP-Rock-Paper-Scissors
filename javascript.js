@@ -10,7 +10,7 @@ var answers = ["Rock", "Paper", "Scissors"];
 // We will start by creating a function called 'getComputerChoice', and run a quick test on it
 function getComputerChoice() {
     let choice = answers[(Math.floor(Math.random() * answers.length))];
-    console.log(choice);
+    return choice;
 }
 
 
@@ -20,14 +20,33 @@ function getHumanChoice() {
     let choice = prompt("Please enter 1 for 'Rock';\nPlease enter 2 for 'Paper';\nPlease enter 3 for 'Scissors': ");
     
     if (choice == 1) {
-        console.log('Rock');
+        result = 'Rock';
     } else if (choice == 2) {
-        console.log('Paper');
+        result = 'Paper';
     } else if (choice == 3) {
-        console.log('Scissors');
-    } else console.log('Wrong Choice!');
+        result = 'Scissors';
+    } else result = 'Wrong Choice!';
+
+    return result;
 }
 
 // We will create two new global variables to store human and computer score, both initially set at 0
 var humanScore = 0;
 var computerScore = 0;
+
+// We'll go ahead and create a function that will let us play the game.
+function playRound(humanChoice, computerChoice) {
+    if (humanChoice == computerChoice) {
+        console.log("Tie");
+    } else {
+        console.log("Nobody wins!");
+    }
+}
+
+humanChoice = getHumanChoice();
+computerChoice = getComputerChoice();
+console.log(humanChoice);
+console.log(computerChoice);
+playRound(humanChoice, computerChoice);
+
+
