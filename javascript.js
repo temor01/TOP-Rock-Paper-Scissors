@@ -12,5 +12,3 @@ function getComputerChoice() {
     choice = answers[(Math.floor(Math.random() * answers.length))];
     console.log(choice);
 }
-
-getComputerChoice();
