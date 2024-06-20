@@ -36,6 +36,8 @@ var computerScore = 0;
 
 
 // We'll make a new function that determines who wins
+// The variables in this function are going to be switched based on the player
+// This just makes it easy and simple, instead having all the code sitting at one function
 function winner(humanChoice, computerChoice) {
     if (humanChoice == 'Rock' & computerChoice == 'Scissors') {
         console.log('Rock wins!');
