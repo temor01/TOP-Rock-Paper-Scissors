@@ -43,10 +43,13 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
+// linking our latest variable to user input and computer choice
 humanChoice = getHumanChoice();
 computerChoice = getComputerChoice();
+
+// testing to make sure we get the correct result
 console.log(humanChoice);
 console.log(computerChoice);
+
+// calling the function to see the final result
 playRound(humanChoice, computerChoice);
-
-
