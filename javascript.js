@@ -38,18 +38,15 @@ var computerScore = 0;
 // We'll make a new function that determines who wins
 // The variables in this function are going to be switched based on the player
 // This just makes it easy and simple, instead having all the code sitting at one function
-function winner(humanChoice, computerChoice) {
+function winner(humanChoice, computerChoice, humanScore = score) {
     if (humanChoice == 'Rock' & computerChoice == 'Scissors') {
-        console.log('Rock wins!');
-        humanScore = +1;
+        score = +1;
     } else if (humanChoice == 'Paper' & computerChoice == 'Rock') {
-        console.log('Paper wins!');
-        humanScore = +1;
+        score = +1;
     } else if (humanChoice == 'Scissors' & computerChoice == 'Paper') {
-        console.log('Scissors win!');
-        humanScore = +1;
+        score = +1;
     } else {
-        return ('Nobody wins!');
+        return 'Nobody Wins!';
     }
 }
 
@@ -58,9 +55,11 @@ function winner(humanChoice, computerChoice) {
 function playRound(humanChoice, computerChoice) {
     if (humanChoice == computerChoice) {
         console.log("Tie");
-    } else if (winner(humanChoice, computerChoice) != 'Nobody wins!') {
-        console.log("Human wins!");
-    } else winner(computerChoice, humanChoice);
+    } else if (winner(humanChoice, computerChoice, humanScore) != 'Nobody Wins!') {
+        console.log("Human Wins!");
+    } else  if (winner(computerChoice, humanChoice, computerScore) != 'Nobody Wins!') {
+        console.log("Computer Wins!");
+    } else console.log("Nobody Wins!");
 }
 
 
