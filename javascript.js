@@ -27,5 +27,3 @@ function getHumanChoice() {
         console.log('Scissors');
     } else console.log('Wrong Choice!');
 }
-
-getHumanChoice();
