@@ -75,3 +75,6 @@ console.log("Computer Choice: " + computerChoice);
 // calling the function to see the final result
 playRound(humanChoice, computerChoice);
 
+// We'll go ahead and try to fetch the scores
+console.log("Human Score: " + humanScore);
+console.log("Computer Score: " + computerScore);
