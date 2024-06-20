@@ -68,6 +68,23 @@ humanChoice = getHumanChoice();
 computerChoice = getComputerChoice();
 
 // testing to make sure we get the correct result
+
+
+
+
+
+
+
+// scores must be moved to where the final results are checked.
+
+
+
+
+
+
+
+
+
 console.log("Human Choice: " + humanChoice);
 console.log("Computer Choice: " + computerChoice);
 
