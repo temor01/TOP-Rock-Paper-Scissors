@@ -38,13 +38,13 @@ var computerScore = 0;
 // We'll make a new function that determines who wins
 // The variables in this function are going to be switched based on the player
 // This just makes it easy and simple, instead having all the code sitting at one function
-function winner(humanChoice, computerChoice, humanScore) {
+function winner(humanChoice, computerChoice) {
     if (humanChoice == 'Rock' & computerChoice == 'Scissors') {
-        humanScore = +1;
+        return 'Rock Wins!';
     } else if (humanChoice == 'Paper' & computerChoice == 'Rock') {
-        humanScore = +1;
+        return 'Paper Wins!';
     } else if (humanChoice == 'Scissors' & computerChoice == 'Paper') {
-        humanScore = +1;
+        return 'Scissors Wins!';
     } else {
         return 'Nobody Wins!';
     }
