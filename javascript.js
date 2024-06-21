@@ -57,10 +57,10 @@ function playRound(humanChoice, computerChoice) {
         console.log("Tie");
     } else if (winner(humanChoice, computerChoice) != 'Nobody Wins!') {
         console.log("Human Wins!");
-        humanScore = +1;
+        humanScore++;
     } else  if (winner(computerChoice, humanChoice) != 'Nobody Wins!') {
         console.log("Computer Wins!");
-        computerScore = +1;
+        computerScore++;
     } else console.log("Nobody Wins!");
 }
 
