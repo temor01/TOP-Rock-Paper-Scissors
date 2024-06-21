@@ -79,7 +79,9 @@ var valv = 1;
 while (valv <= 5) {
     // calling the function to see the final result
     playRound(humanChoice, computerChoice);
-    // We'll go ahead and try to fetch the scores
-    console.log("Human Score: " + humanScore);
-    console.log("Computer Score: " + computerScore);
+    valv++;
 }
+
+// We'll go ahead and try to fetch the scores
+console.log("Human Score: " + humanScore);
+console.log("Computer Score: " + computerScore);
