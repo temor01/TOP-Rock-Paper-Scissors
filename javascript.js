@@ -73,8 +73,20 @@ computerChoice = getComputerChoice();
 console.log("Human Choice: " + humanChoice);
 console.log("Computer Choice: " + computerChoice);
 
-// calling the function to see the final result
-playRound(humanChoice, computerChoice);
+// creating a new function to call playRound function five times
+function playGame() {
+    // calling the function to see the final result
+    playRound(humanChoice, computerChoice);
+
+    // calling it four more times
+    playRound(humanChoice, computerChoice);
+    playRound(humanChoice, computerChoice);
+    playRound(humanChoice, computerChoice);
+    playRound(humanChoice, computerChoice);
+}
+
+playGame()
+
 
 // We'll go ahead and try to fetch the scores
 console.log("Human Score: " + humanScore);
