@@ -1,7 +1,5 @@
 // Rock Paper Scissors for TOP project.
 
-// Testing to see if our files are properly linked.
-console.log("Hello World");
 
 // Storing game choices in an array
 var answers = ["Rock", "Paper", "Scissors"];
@@ -62,16 +60,16 @@ function playRound(humanChoice, computerChoice) {
         console.log("Computer Wins!");
         computerScore++;
     } else console.log("Nobody Wins!");
+
+    // Declaring the winner!
+    console.log("Human Choice: " + humanChoice);
+    console.log("Computer Choice: " + computerChoice);
 }
 
 
 // linking our latest variable to user input and computer choice
 humanChoice = getHumanChoice();
 computerChoice = getComputerChoice();
-
-// Declaring the winner!
-console.log("Human Choice: " + humanChoice);
-console.log("Computer Choice: " + computerChoice);
 
 // creating a new function to call playRound function five times
 function playGame() {
