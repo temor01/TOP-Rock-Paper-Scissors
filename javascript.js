@@ -54,10 +54,8 @@ function playRound(humanChoice, computerChoice) {
     if (humanChoice == computerChoice) {
         console.log("Tie");
     } else if (winner(humanChoice, computerChoice) != 'Nobody Wins!') {
-        console.log("Human Wins!");
         humanScore++;
     } else  if (winner(computerChoice, humanChoice) != 'Nobody Wins!') {
-        console.log("Computer Wins!");
         computerScore++;
     } else console.log("Nobody Wins!");
 
@@ -77,10 +75,7 @@ function playGame() {
     playRound(humanChoice, computerChoice);
 
     // calling it four more times
-    playRound(humanChoice, computerChoice);
-    playRound(humanChoice, computerChoice);
-    playRound(humanChoice, computerChoice);
-    playRound(humanChoice, computerChoice);
+
 }
 
 playGame()
@@ -89,3 +84,11 @@ playGame()
 // We'll go ahead and try to fetch the scores
 console.log("Human Score: " + humanScore);
 console.log("Computer Score: " + computerScore);
+
+if (humanScore > computerScore) {
+    console.log("Human Wins!");
+} else if (computerScore > humanScore) {
+    console.log("Computer Wins!");
+} else {
+    console.log("It's a tie!");
+}
