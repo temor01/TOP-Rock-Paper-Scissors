@@ -66,19 +66,20 @@ function playRound(humanChoice, computerChoice) {
     console.log("Computer Choice: " + computerChoice);
 }
 
+// creating a new function to call playRound function five times
+function playGame() {
+    playRound(getHumanChoice(), getComputerChoice());
+    playRound(getHumanChoice(), getComputerChoice());
+    playRound(getHumanChoice(), getComputerChoice());
+    playRound(getHumanChoice(), getComputerChoice());
+    playRound(getHumanChoice(), getComputerChoice());
+}
+
 
 // linking our latest variable to user input and computer choice
 humanChoice = getHumanChoice();
 computerChoice = getComputerChoice();
 
-// creating a new function to call playRound function five times
-function playGame() {
-    // calling the function to see the final result
-    playRound(humanChoice, computerChoice);
-
-    // calling it four more times
-
-}
 
 playGame()
 
