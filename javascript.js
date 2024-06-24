@@ -51,13 +51,15 @@ function winner(humanChoice, computerChoice) {
 
 // We'll go ahead and create a function that will let us play the game.
 function playRound(humanChoice, computerChoice) {
-    if (humanChoice == computerChoice) {
-        console.log("Tie");
-    } else if (winner(humanChoice, computerChoice) != 'Nobody Wins!') {
-        humanScore++;
-    } else  if (winner(computerChoice, humanChoice) != 'Nobody Wins!') {
-        computerScore++;
-    } else console.log("Nobody Wins!");
+    if (humanChoice != computerChoice) {
+        if (winner(humanChoice, computerChoice) != 'Nobody Wins!') {
+            humanScore++;
+        } else  if (winner(computerChoice, humanChoice) != 'Nobody Wins!') {
+            computerScore++;
+        }
+    } else {
+        console.log("It's a tie!");
+    }
 
     // Declaring the winner!
     console.log("Human Choice: " + humanChoice);
