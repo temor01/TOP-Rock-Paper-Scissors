@@ -70,11 +70,17 @@ computerChoice = getComputerChoice();
 
 // creating a new function to call playRound function five times
 function playGame() {
+    console.log("Round ONE: ");
     playRound(getHumanChoice(), getComputerChoice());
+    console.log("Round TWO: ");
     playRound(getHumanChoice(), getComputerChoice());
+    console.log("Round THREE: ");
     playRound(getHumanChoice(), getComputerChoice());
+    console.log("Round FOUR: ");
     playRound(getHumanChoice(), getComputerChoice());
+    console.log("Round FIVE: ");
     playRound(getHumanChoice(), getComputerChoice());
+    console.log("Rsults: ");
 }
 
 
