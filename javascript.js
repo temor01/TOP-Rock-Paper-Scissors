@@ -59,7 +59,7 @@ function playRound(humanChoice, computerChoice) {
         }
     }
 
-    // Declaring the winner!
+    // Declaring each player's choice
     console.log("Human Choice: " + humanChoice);
     console.log("Computer Choice: " + computerChoice);
 }
