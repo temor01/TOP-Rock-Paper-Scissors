@@ -91,6 +91,8 @@ playGame()
 console.log("Human Score: " + humanScore);
 console.log("Computer Score: " + computerScore);
 
+
+// And finally announcing the winner!
 if (humanScore > computerScore) {
     console.log("Human Wins!");
 } else if (computerScore > humanScore) {
