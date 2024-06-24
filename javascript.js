@@ -57,14 +57,16 @@ function playRound(humanChoice, computerChoice) {
         } else  if (winner(computerChoice, humanChoice) != 'Nobody Wins!') {
             computerScore++;
         }
-    } else {
-        console.log("It's a tie!");
     }
 
     // Declaring the winner!
     console.log("Human Choice: " + humanChoice);
     console.log("Computer Choice: " + computerChoice);
 }
+
+// linking our latest variable to user input and computer choice
+humanChoice = getHumanChoice();
+computerChoice = getComputerChoice();
 
 // creating a new function to call playRound function five times
 function playGame() {
@@ -74,11 +76,6 @@ function playGame() {
     playRound(getHumanChoice(), getComputerChoice());
     playRound(getHumanChoice(), getComputerChoice());
 }
-
-
-// linking our latest variable to user input and computer choice
-humanChoice = getHumanChoice();
-computerChoice = getComputerChoice();
 
 
 playGame()
