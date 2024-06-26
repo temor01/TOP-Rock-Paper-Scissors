@@ -102,3 +102,8 @@ if (humanScore > computerScore) {
 } else {
     console.log("It's a tie!");
 }
+
+
+
+
+// I must make it so that the game ends if one player scores 3
