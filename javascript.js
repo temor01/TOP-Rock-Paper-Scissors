@@ -44,7 +44,7 @@ function winner(humanChoice, computerChoice) {
     } else if (humanChoice == 'Scissors' & computerChoice == 'Paper') {
         console.log('Scissors Wins!');
     } else {
-        return 'Nobody Wins!';
+        console.log("It's a Tie!");
     }
 }
 
