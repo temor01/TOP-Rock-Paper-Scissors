@@ -69,6 +69,8 @@ humanChoice = getHumanChoice();
 computerChoice = getComputerChoice();
 
 // creating a new function to call playRound function five times
+
+// There's one additional propmpt at the beginning. To be investigated.
 function playGame() {
     console.log("Round ONE: ");
     playRound(getHumanChoice(), getComputerChoice());
