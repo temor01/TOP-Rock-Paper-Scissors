@@ -38,11 +38,11 @@ var computerScore = 0;
 // This just makes it easy and simple, instead having all the code sitting at one function
 function winner(humanChoice, computerChoice) {
     if (humanChoice == 'Rock' & computerChoice == 'Scissors') {
-        return 'Rock Wins!';
+        console.log('Rock Wins!');
     } else if (humanChoice == 'Paper' & computerChoice == 'Rock') {
-        return 'Paper Wins!';
+        console.log('Paper Wins!');
     } else if (humanChoice == 'Scissors' & computerChoice == 'Paper') {
-        return 'Scissors Wins!';
+        console.log('Scissors Wins!');
     } else {
         return 'Nobody Wins!';
     }
